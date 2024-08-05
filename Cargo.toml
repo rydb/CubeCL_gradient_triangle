@@ -1,0 +1,16 @@
+[package]
+name = "cubecl_gradient_triangle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cubecl = {version = "*", features = ["wgpu"]}
+pollster = "0.3"
+wgpu = "22.1"
+winit = { version = "0.29", features = ["rwh_05"] }
+derive_more = {version = "0.99", default-features = false, features = ["from", "into"]}
+bytemuck = { version = "1.12", features = [ "derive" ] }
+const-default = {version = "1", features = ["derive"]}
+log = "0.4"
+env_logger = "0.10"
+naga = {version = "22.1", features = ["wgsl-out"]}
